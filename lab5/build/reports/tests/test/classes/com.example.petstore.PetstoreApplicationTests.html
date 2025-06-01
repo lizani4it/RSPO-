@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PetstoreApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PetstoreApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.petstore.html">com.example.petstore</a> &gt; PetstoreApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.504s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.504s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:03:17.072 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.petstore.PetstoreApplicationTests]: PetstoreApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:03:17.260 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.petstore.PetstoreApplication for test class com.example.petstore.PetstoreApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-03-24T14:03:17.975+07:00  INFO 17536 --- [petstore-test] [    Test worker] c.e.petstore.PetstoreApplicationTests    : Starting PetstoreApplicationTests using Java 21.0.6 with PID 17536 (started by pprik in C:\Users\pprik\Desktop\RSPO\lab5)
+2025-03-24T14:03:17.976+07:00  INFO 17536 --- [petstore-test] [    Test worker] c.e.petstore.PetstoreApplicationTests    : The following 1 profile is active: &quot;test&quot;
+2025-03-24T14:03:18.797+07:00  INFO 17536 --- [petstore-test] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-24T14:03:18.867+07:00  INFO 17536 --- [petstore-test] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2025-03-24T14:03:19.584+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-03-24T14:03:19.605+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-24T14:03:19.605+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-24T14:03:19.695+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-24T14:03:19.696+07:00  INFO 17536 --- [petstore-test] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1685 ms
+2025-03-24T14:03:19.872+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.GlobalConfiguration
+2025-03-24T14:03:19.876+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.integration.commandline.LiquibaseCommandLineConfiguration
+2025-03-24T14:03:19.877+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.logging.core.DefaultLoggerConfiguration
+2025-03-24T14:03:19.878+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.sql.SqlConfiguration
+2025-03-24T14:03:19.881+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.AutoloadedConfigurations instance liquibase.parser.ChangeLogParserConfiguration
+2025-03-24T14:03:19.881+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found ConfigurationDefinitions in liquibase.GlobalConfiguration
+2025-03-24T14:03:19.881+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found ConfigurationDefinitions in liquibase.integration.commandline.LiquibaseCommandLineConfiguration
+2025-03-24T14:03:19.881+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found ConfigurationDefinitions in liquibase.logging.core.DefaultLoggerConfiguration
+2025-03-24T14:03:19.881+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found ConfigurationDefinitions in liquibase.sql.SqlConfiguration
+2025-03-24T14:03:19.882+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found ConfigurationDefinitions in liquibase.parser.ChangeLogParserConfiguration
+2025-03-24T14:03:19.884+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.DeprecatedConfigurationValueProvider
+2025-03-24T14:03:19.886+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.SystemPropertyValueProvider
+2025-03-24T14:03:19.887+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.ScopeValueProvider
+2025-03-24T14:03:19.888+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.configuration.ConfigurationValueProvider instance liquibase.configuration.core.EnvironmentValueProvider
+2025-03-24T14:03:19.891+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.logging.LogService instance liquibase.logging.core.BufferedLogService
+2025-03-24T14:03:19.892+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.logging.LogService instance liquibase.logging.core.CompositeLogService
+2025-03-24T14:03:19.893+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.logging.LogService instance liquibase.logging.core.JavaLogService
+2025-03-24T14:03:19.894+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.servicelocator.ServiceLocator instance liquibase.servicelocator.StandardServiceLocator
+2025-03-24T14:03:19.926+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.shouldRun aka should.run found
+2025-03-24T14:03:19.926+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.shouldRun is using the default value of true
+2025-03-24T14:03:19.928+07:00  INFO 17536 --- [petstore-test] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-24T14:03:20.304+07:00  INFO 17536 --- [petstore-test] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fc7fa6e
+2025-03-24T14:03:20.306+07:00  INFO 17536 --- [petstore-test] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-24T14:03:20.318+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.jvm.ConnectionPatterns instance liquibase.database.jvm.JdbcConnectionPatterns
+2025-03-24T14:03:20.330+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.CockroachDatabase
+2025-03-24T14:03:20.332+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.DB2Database
+2025-03-24T14:03:20.333+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.Db2zDatabase
+2025-03-24T14:03:20.335+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.DerbyDatabase
+2025-03-24T14:03:20.336+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.EnterpriseDBDatabase
+2025-03-24T14:03:20.337+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.FirebirdDatabase
+2025-03-24T14:03:20.338+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.H2Database
+2025-03-24T14:03:20.340+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.HsqlDatabase
+2025-03-24T14:03:20.342+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.InformixDatabase
+2025-03-24T14:03:20.343+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.Ingres9Database
+2025-03-24T14:03:20.345+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.MSSQLDatabase
+2025-03-24T14:03:20.347+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.MariaDBDatabase
+2025-03-24T14:03:20.350+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.MockDatabase
+2025-03-24T14:03:20.350+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.MySQLDatabase
+2025-03-24T14:03:20.353+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.OracleDatabase
+2025-03-24T14:03:20.353+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.PostgresDatabase
+2025-03-24T14:03:20.354+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.SQLiteDatabase
+2025-03-24T14:03:20.355+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.SybaseASADatabase
+2025-03-24T14:03:20.356+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.SybaseDatabase
+2025-03-24T14:03:20.357+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.UnsupportedDatabase
+2025-03-24T14:03:20.358+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.Database instance liquibase.database.core.SnowflakeDatabase
+2025-03-24T14:03:20.367+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.database                       : Connected to postgres@jdbc:postgresql://localhost:5432/testdb
+2025-03-24T14:03:20.368+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.database                       : Setting auto commit to false from true
+2025-03-24T14:03:20.404+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.executor.Executor instance liquibase.executor.jvm.JdbcExecutor
+2025-03-24T14:03:20.405+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.executor.Executor instance liquibase.executor.jvm.SnowflakeJdbcExecutor
+2025-03-24T14:03:20.412+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGenerator
+2025-03-24T14:03:20.412+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorDB2
+2025-03-24T14:03:20.413+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorHsqlH2
+2025-03-24T14:03:20.415+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorInformix
+2025-03-24T14:03:20.416+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorMySQL
+2025-03-24T14:03:20.416+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorSQLite
+2025-03-24T14:03:20.419+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGenerator
+2025-03-24T14:03:20.420+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorDefaultClauseBeforeNotNull
+2025-03-24T14:03:20.421+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorSQLite
+2025-03-24T14:03:20.422+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGenerator
+2025-03-24T14:03:20.423+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorDerby
+2025-03-24T14:03:20.424+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorInformix
+2025-03-24T14:03:20.424+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMSSQL
+2025-03-24T14:03:20.426+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMySQL
+2025-03-24T14:03:20.427+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorOracle
+2025-03-24T14:03:20.427+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorPostgres
+2025-03-24T14:03:20.429+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSQLite
+2025-03-24T14:03:20.430+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybase
+2025-03-24T14:03:20.431+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybaseASA
+2025-03-24T14:03:20.432+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddForeignKeyConstraintGenerator
+2025-03-24T14:03:20.433+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGenerator
+2025-03-24T14:03:20.433+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGeneratorInformix
+2025-03-24T14:03:20.434+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGenerator
+2025-03-24T14:03:20.435+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorInformix
+2025-03-24T14:03:20.435+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorTDS
+2025-03-24T14:03:20.436+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AlterSequenceGenerator
+2025-03-24T14:03:20.436+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.BatchDmlExecutablePreparedStatementGenerator
+2025-03-24T14:03:20.437+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ClearDatabaseChangeLogTableGenerator
+2025-03-24T14:03:20.438+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CommentGenerator
+2025-03-24T14:03:20.438+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CopyRowsGenerator
+2025-03-24T14:03:20.438+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogLockTableGenerator
+2025-03-24T14:03:20.439+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGenerator
+2025-03-24T14:03:20.440+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGeneratorSybase
+2025-03-24T14:03:20.440+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGenerator
+2025-03-24T14:03:20.445+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorFirebird
+2025-03-24T14:03:20.446+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorPostgres
+2025-03-24T14:03:20.447+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateProcedureGenerator
+2025-03-24T14:03:20.448+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGenerator
+2025-03-24T14:03:20.450+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGenerator
+2025-03-24T14:03:20.451+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGeneratorInformix
+2025-03-24T14:03:20.452+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGenerator
+2025-03-24T14:03:20.452+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGeneratorInformix
+2025-03-24T14:03:20.453+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DeleteGenerator
+2025-03-24T14:03:20.453+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropColumnGenerator
+2025-03-24T14:03:20.454+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGenerator
+2025-03-24T14:03:20.455+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropForeignKeyConstraintGenerator
+2025-03-24T14:03:20.456+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropIndexGenerator
+2025-03-24T14:03:20.456+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropPrimaryKeyGenerator
+2025-03-24T14:03:20.456+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGenerator
+2025-03-24T14:03:20.458+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropSequenceGenerator
+2025-03-24T14:03:20.459+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropTableGenerator
+2025-03-24T14:03:20.459+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropUniqueConstraintGenerator
+2025-03-24T14:03:20.460+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropViewGenerator
+2025-03-24T14:03:20.461+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetNextChangeSetSequenceValueGenerator
+2025-03-24T14:03:20.461+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGenerator
+2025-03-24T14:03:20.462+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDB2
+2025-03-24T14:03:20.463+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDerby
+2025-03-24T14:03:20.464+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorFirebird
+2025-03-24T14:03:20.465+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorHsql
+2025-03-24T14:03:20.466+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorInformix
+2025-03-24T14:03:20.467+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorMSSQL
+2025-03-24T14:03:20.467+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorOracle
+2025-03-24T14:03:20.468+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorPostgres
+2025-03-24T14:03:20.469+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybase
+2025-03-24T14:03:20.469+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybaseASA
+2025-03-24T14:03:20.470+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InitializeDatabaseChangeLogLockTableGenerator
+2025-03-24T14:03:20.471+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertDataChangeGenerator
+2025-03-24T14:03:20.472+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertGenerator
+2025-03-24T14:03:20.474+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorDB2
+2025-03-24T14:03:20.475+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorH2
+2025-03-24T14:03:20.475+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorHsql
+2025-03-24T14:03:20.476+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorInformix
+2025-03-24T14:03:20.477+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMSSQL
+2025-03-24T14:03:20.477+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMySQL
+2025-03-24T14:03:20.478+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorOracle
+2025-03-24T14:03:20.478+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorPostgres
+2025-03-24T14:03:20.479+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSQLite
+2025-03-24T14:03:20.479+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSybaseASA
+2025-03-24T14:03:20.480+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertSetGenerator
+2025-03-24T14:03:20.484+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.LockDatabaseChangeLogGenerator
+2025-03-24T14:03:20.486+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.MarkChangeSetRanGenerator
+2025-03-24T14:03:20.486+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ModifyDataTypeGenerator
+2025-03-24T14:03:20.487+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawParameterizedSqlGenerator
+2025-03-24T14:03:20.487+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawSqlGenerator
+2025-03-24T14:03:20.489+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReindexGeneratorSQLite
+2025-03-24T14:03:20.489+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RemoveChangeSetRanStatusGenerator
+2025-03-24T14:03:20.490+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameColumnGenerator
+2025-03-24T14:03:20.491+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameSequenceGenerator
+2025-03-24T14:03:20.492+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGenerator
+2025-03-24T14:03:20.492+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGenerator
+2025-03-24T14:03:20.493+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReorganizeTableGeneratorDB2
+2025-03-24T14:03:20.493+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RuntimeGenerator
+2025-03-24T14:03:20.494+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogGenerator
+2025-03-24T14:03:20.495+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogLockGenerator
+2025-03-24T14:03:20.496+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGenerator
+2025-03-24T14:03:20.497+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetNullableGenerator
+2025-03-24T14:03:20.498+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGenerator
+2025-03-24T14:03:20.499+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetViewRemarksGenerator
+2025-03-24T14:03:20.500+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.StoredProcedureGenerator
+2025-03-24T14:03:20.500+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableIsEmptyGenerator
+2025-03-24T14:03:20.501+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableRowCountGenerator
+2025-03-24T14:03:20.501+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TagDatabaseGenerator
+2025-03-24T14:03:20.502+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UnlockDatabaseChangeLogGenerator
+2025-03-24T14:03:20.502+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateChangeSetChecksumGenerator
+2025-03-24T14:03:20.503+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateDataChangeGenerator
+2025-03-24T14:03:20.503+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateGenerator
+2025-03-24T14:03:20.504+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGeneratorSnowflake
+2025-03-24T14:03:20.504+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGeneratorSnowflake
+2025-03-24T14:03:20.505+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGeneratorSnowflake
+2025-03-24T14:03:20.506+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSnowflake
+2025-03-24T14:03:20.507+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGeneratorSnowflake
+2025-03-24T14:03:20.507+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGeneratorSnowflake
+2025-03-24T14:03:20.508+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGeneratorSnowflake
+2025-03-24T14:03:20.508+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGeneratorSnowflake
+2025-03-24T14:03:20.509+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSnowflake
+2025-03-24T14:03:20.541+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.database                       : Set default schema name to public
+2025-03-24T14:03:20.542+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.liquibaseSchemaName aka liquibase.schemaName found
+2025-03-24T14:03:20.545+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.supportPropertyEscaping aka enableEscaping found
+2025-03-24T14:03:20.545+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.supportPropertyEscaping is using the default value of false
+2025-03-24T14:03:20.575+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.CalculateChecksumCommandStep
+2025-03-24T14:03:20.578+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncCommandStep
+2025-03-24T14:03:20.579+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncSqlCommandStep
+2025-03-24T14:03:20.580+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncToTagCommandStep
+2025-03-24T14:03:20.581+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ChangelogSyncToTagSqlCommandStep
+2025-03-24T14:03:20.583+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ClearChecksumsCommandStep
+2025-03-24T14:03:20.585+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.DbDocCommandStep
+2025-03-24T14:03:20.598+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddAutoIncrementChange
+2025-03-24T14:03:20.600+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddColumnChange
+2025-03-24T14:03:20.603+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddDefaultValueChange
+2025-03-24T14:03:20.605+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddForeignKeyConstraintChange
+2025-03-24T14:03:20.606+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddLookupTableChange
+2025-03-24T14:03:20.608+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddNotNullConstraintChange
+2025-03-24T14:03:20.610+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddPrimaryKeyChange
+2025-03-24T14:03:20.611+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AddUniqueConstraintChange
+2025-03-24T14:03:20.613+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.AlterSequenceChange
+2025-03-24T14:03:20.616+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.CreateIndexChange
+2025-03-24T14:03:20.622+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.CreateProcedureChange
+2025-03-24T14:03:20.623+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.CreateSequenceChange
+2025-03-24T14:03:20.625+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.CreateTableChange
+2025-03-24T14:03:20.627+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.CreateViewChange
+2025-03-24T14:03:20.628+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DeleteDataChange
+2025-03-24T14:03:20.630+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropAllForeignKeyConstraintsChange
+2025-03-24T14:03:20.632+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropColumnChange
+2025-03-24T14:03:20.633+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropDefaultValueChange
+2025-03-24T14:03:20.634+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropForeignKeyConstraintChange
+2025-03-24T14:03:20.635+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropIndexChange
+2025-03-24T14:03:20.636+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropNotNullConstraintChange
+2025-03-24T14:03:20.638+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropPrimaryKeyChange
+2025-03-24T14:03:20.640+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropProcedureChange
+2025-03-24T14:03:20.640+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropSequenceChange
+2025-03-24T14:03:20.642+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropTableChange
+2025-03-24T14:03:20.643+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropUniqueConstraintChange
+2025-03-24T14:03:20.644+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.DropViewChange
+2025-03-24T14:03:20.644+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.EmptyChange
+2025-03-24T14:03:20.647+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.ExecuteShellCommandChange
+2025-03-24T14:03:20.650+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.InsertDataChange
+2025-03-24T14:03:20.658+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.LoadDataChange
+2025-03-24T14:03:20.660+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.LoadUpdateDataChange
+2025-03-24T14:03:20.662+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.MergeColumnChange
+2025-03-24T14:03:20.663+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.ModifyDataTypeChange
+2025-03-24T14:03:20.664+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.OutputChange
+2025-03-24T14:03:20.667+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.RawSQLChange
+2025-03-24T14:03:20.668+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.RenameColumnChange
+2025-03-24T14:03:20.669+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.RenameSequenceChange
+2025-03-24T14:03:20.670+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.RenameTableChange
+2025-03-24T14:03:20.672+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.RenameViewChange
+2025-03-24T14:03:20.672+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.SQLFileChange
+2025-03-24T14:03:20.674+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.SetColumnRemarksChange
+2025-03-24T14:03:20.675+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.SetTableRemarksChange
+2025-03-24T14:03:20.675+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.StopChange
+2025-03-24T14:03:20.677+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.TagDatabaseChange
+2025-03-24T14:03:20.677+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.core.UpdateDataChange
+2025-03-24T14:03:20.681+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.change.Change instance liquibase.change.custom.CustomChangeWrapper
+2025-03-24T14:03:20.804+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.DiffChangelogCommandStep
+2025-03-24T14:03:20.810+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.DiffCommandStep
+2025-03-24T14:03:20.812+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.DropAllCommandStep
+2025-03-24T14:03:20.814+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ExecuteSqlCommandStep
+2025-03-24T14:03:20.818+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackCountSqlCommandStep
+2025-03-24T14:03:20.819+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackFromTagSqlCommandStep
+2025-03-24T14:03:20.821+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.FutureRollbackSqlCommandStep
+2025-03-24T14:03:20.825+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.GenerateChangelogCommandStep
+2025-03-24T14:03:20.830+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.HistoryCommandStep
+2025-03-24T14:03:20.831+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.InternalSnapshotCommandStep
+2025-03-24T14:03:20.832+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ListLocksCommandStep
+2025-03-24T14:03:20.833+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.MarkNextChangesetRanCommandStep
+2025-03-24T14:03:20.833+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.MarkNextChangesetRanSqlCommandStep
+2025-03-24T14:03:20.834+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ReleaseLocksCommandStep
+2025-03-24T14:03:20.839+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCommandStep
+2025-03-24T14:03:20.840+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCountCommandStep
+2025-03-24T14:03:20.842+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackCountSqlCommandStep
+2025-03-24T14:03:20.843+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackSqlCommandStep
+2025-03-24T14:03:20.845+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackToDateCommandStep
+2025-03-24T14:03:20.846+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.RollbackToDateSqlCommandStep
+2025-03-24T14:03:20.847+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.SnapshotCommandStep
+2025-03-24T14:03:20.847+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.SnapshotReferenceCommandStep
+2025-03-24T14:03:20.848+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.StartH2CommandStep
+2025-03-24T14:03:20.850+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.StatusCommandStep
+2025-03-24T14:03:20.851+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.StopH2CommandStep
+2025-03-24T14:03:20.851+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.TagCommandStep
+2025-03-24T14:03:20.852+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.TagExistsCommandStep
+2025-03-24T14:03:20.853+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UnexpectedChangesetsCommandStep
+2025-03-24T14:03:20.853+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCommandStep
+2025-03-24T14:03:20.854+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCountCommandStep
+2025-03-24T14:03:20.854+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateCountSqlCommandStep
+2025-03-24T14:03:20.855+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateSqlCommandStep
+2025-03-24T14:03:20.856+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateTestingRollbackCommandStep
+2025-03-24T14:03:20.857+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateToTagCommandStep
+2025-03-24T14:03:20.858+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.UpdateToTagSqlCommandStep
+2025-03-24T14:03:20.859+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.ValidateCommandStep
+2025-03-24T14:03:20.860+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ChangeExecListenerCommandStep
+2025-03-24T14:03:20.861+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DatabaseChangelogCommandStep
+2025-03-24T14:03:20.862+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep
+2025-03-24T14:03:20.864+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DbUrlConnectionCommandStep
+2025-03-24T14:03:20.868+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.DiffOutputControlCommandStep
+2025-03-24T14:03:20.869+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.LockServiceCommandStep
+2025-03-24T14:03:20.870+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.OutputWriterCommandStep
+2025-03-24T14:03:20.872+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.PreCompareCommandStep
+2025-03-24T14:03:20.873+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ReferenceDatabaseOutputWriterCommandStep
+2025-03-24T14:03:20.874+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ReferenceDbUrlConnectionCommandStep
+2025-03-24T14:03:20.877+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.command.CommandStep instance liquibase.command.core.helpers.ShowSummaryArgument
+2025-03-24T14:03:20.886+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.logging.mdc.MdcManager instance liquibase.logging.mdc.NoOpMdcManager
+2025-03-24T14:03:20.887+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.strict found
+2025-03-24T14:03:20.887+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.strict is using the default value of false
+2025-03-24T14:03:20.894+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.changeExecListener found
+2025-03-24T14:03:20.894+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.changeExecListener found
+2025-03-24T14:03:20.895+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.changeExecListenerClass found
+2025-03-24T14:03:20.895+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.changeExecListenerClass found
+2025-03-24T14:03:20.895+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.changeExecListenerPropertiesFile found
+2025-03-24T14:03:20.896+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.changeExecListenerPropertiesFile found
+2025-03-24T14:03:20.896+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found 'liquibase.command.update.changelogFile' configuration of 'classpath:db/changelog/db.changelog-master.yaml'
+    command argument 'changelogFile' of 'classpath:db/changelog/db.changelog-master.yaml'
+2025-03-24T14:03:20.896+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found 'liquibase.command.update.changelogParameters' configuration of 'liquibase.changelog.ChangeLogParameters@236fd411'
+    command argument 'changelogParameters' of 'liquibase.changelog.ChangeLogParameters@236fd411'
+2025-03-24T14:03:20.898+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.contextFilter aka liquibase.command.update.contexts found
+2025-03-24T14:03:20.898+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.contextFilter aka liquibase.command.contexts found
+2025-03-24T14:03:20.899+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found 'liquibase.command.update.database' configuration of 'postgres @ jdbc:postgresql://localhost:5432/testdb (Default Schema: public)'
+    command argument 'database' of 'postgres @ jdbc:postgresql://localhost:5432/testdb (Default Schema: public)'
+2025-03-24T14:03:20.899+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.databaseChangelog found
+2025-03-24T14:03:20.899+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.databaseChangelog found
+2025-03-24T14:03:20.900+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.defaultCatalogName found
+2025-03-24T14:03:20.900+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.defaultCatalogName found
+2025-03-24T14:03:20.900+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.defaultSchemaName found
+2025-03-24T14:03:20.901+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.defaultSchemaName found
+2025-03-24T14:03:20.901+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.driver found
+2025-03-24T14:03:20.901+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.driver found
+2025-03-24T14:03:20.902+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.driverPropertiesFile found
+2025-03-24T14:03:20.902+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.driverPropertiesFile found
+2025-03-24T14:03:20.903+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.labelFilter aka liquibase.command.update.labels found
+2025-03-24T14:03:20.903+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.labelFilter aka liquibase.command.labels found
+2025-03-24T14:03:20.903+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.password found
+2025-03-24T14:03:20.904+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.password found
+2025-03-24T14:03:20.904+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.showSummary found
+2025-03-24T14:03:20.904+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
+2025-03-24T14:03:20.904+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.showSummary found
+2025-03-24T14:03:20.904+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.showSummary is using the default value of SUMMARY
+2025-03-24T14:03:20.905+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found 'liquibase.command.update.showSummaryOutput' configuration of 'LOG'
+    command argument 'showSummaryOutput' of 'LOG'
+2025-03-24T14:03:20.910+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.skipDatabaseStep found
+2025-03-24T14:03:20.910+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
+2025-03-24T14:03:20.910+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.skipDatabaseStep found
+2025-03-24T14:03:20.910+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.skipDatabaseStep is using the default value of false
+2025-03-24T14:03:20.911+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.updateNullChecksums found
+2025-03-24T14:03:20.911+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.update.updateNullChecksums is using the default value of false
+2025-03-24T14:03:20.911+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.updateNullChecksums found
+2025-03-24T14:03:20.911+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.updateNullChecksums is using the default value of false
+2025-03-24T14:03:20.912+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.url found
+2025-03-24T14:03:20.912+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.url found
+2025-03-24T14:03:20.913+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.update.username found
+2025-03-24T14:03:20.913+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.command.username found
+2025-03-24T14:03:20.913+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Pipeline for command 'update: liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep then liquibase.command.core.helpers.ShowSummaryArgument then liquibase.command.core.helpers.DbUrlConnectionCommandStep then liquibase.command.core.helpers.DatabaseChangelogCommandStep then liquibase.command.core.helpers.ChangeExecListenerCommandStep then liquibase.command.core.UpdateCommandStep
+2025-03-24T14:03:20.914+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.outputFile found
+2025-03-24T14:03:20.915+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.outputFileEncoding found
+2025-03-24T14:03:20.915+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.outputFileEncoding is using the default value of UTF-8
+2025-03-24T14:03:20.915+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Writing output with encoding 'UTF-8'
+2025-03-24T14:03:20.915+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Executing internal command dbUrlConnectionArguments
+2025-03-24T14:03:20.915+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Executing internal command showSummary
+2025-03-24T14:03:20.916+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
+2025-03-24T14:03:20.916+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.showSummary is using the default value of SUMMARY
+2025-03-24T14:03:20.916+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Executing internal command dbUrlConnectionCommandStep
+2025-03-24T14:03:20.917+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
+2025-03-24T14:03:20.917+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.command.skipDatabaseStep is using the default value of false
+2025-03-24T14:03:20.918+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Executing internal command changelogCommandStep
+2025-03-24T14:03:20.926+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.formattedsql.FormattedSqlChangeLogParser
+2025-03-24T14:03:20.930+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.json.JsonChangeLogParser
+2025-03-24T14:03:20.930+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.sql.SqlChangeLogParser
+2025-03-24T14:03:20.936+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.validateXmlChangelogFiles found
+2025-03-24T14:03:20.937+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.validateXmlChangelogFiles is using the default value of true
+2025-03-24T14:03:20.937+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.secureParsing found
+2025-03-24T14:03:20.937+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.secureParsing is using the default value of true
+2025-03-24T14:03:20.937+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.xml.XMLChangeLogSAXParser
+2025-03-24T14:03:20.937+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.yaml.YamlChangeLogParser
+2025-03-24T14:03:20.938+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.parser                         : Matched file 'classpath:db/changelog/db.changelog-master.yaml' to parser 'YamlChangeLogParser'
+2025-03-24T14:03:20.953+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.parser                         : Matched file 'db/changelog/changes/initial-schema.yaml' to parser 'YamlChangeLogParser'
+2025-03-24T14:03:20.959+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.changeset.ChangeSetService instance liquibase.changeset.StandardChangeSetService
+2025-03-24T14:03:20.967+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.CustomPreconditionWrapper
+2025-03-24T14:03:20.967+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.AndPrecondition
+2025-03-24T14:03:20.967+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ChangeLogPropertyDefinedPrecondition
+2025-03-24T14:03:20.968+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ChangeSetExecutedPrecondition
+2025-03-24T14:03:20.969+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ColumnExistsPrecondition
+2025-03-24T14:03:20.969+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.DBMSPrecondition
+2025-03-24T14:03:20.970+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ForeignKeyExistsPrecondition
+2025-03-24T14:03:20.970+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.IndexExistsPrecondition
+2025-03-24T14:03:20.970+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.NotPrecondition
+2025-03-24T14:03:20.971+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ObjectQuotingStrategyPrecondition
+2025-03-24T14:03:20.971+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.OrPrecondition
+2025-03-24T14:03:20.971+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.PreconditionContainer
+2025-03-24T14:03:20.972+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.PrimaryKeyExistsPrecondition
+2025-03-24T14:03:20.972+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.RowCountPrecondition
+2025-03-24T14:03:20.973+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.RunningAsPrecondition
+2025-03-24T14:03:20.974+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.SequenceExistsPrecondition
+2025-03-24T14:03:20.975+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.SqlPrecondition
+2025-03-24T14:03:20.976+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.TableExistsPrecondition
+2025-03-24T14:03:20.976+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.TableIsEmptyPrecondition
+2025-03-24T14:03:20.977+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.UniqueConstraintExistsPrecondition
+2025-03-24T14:03:20.977+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.precondition.Precondition instance liquibase.precondition.core.ViewExistsPrecondition
+2025-03-24T14:03:20.982+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Found 'liquibase.command.update.updateNullChecksums' configuration of 'true'
+    command argument 'updateNullChecksums' of 'true'
+2025-03-24T14:03:20.986+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.MockChangeLogHistoryService
+2025-03-24T14:03:20.988+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.changelog.ChangeLogHistoryService instance liquibase.changelog.StandardChangeLogHistoryService
+2025-03-24T14:03:20.993+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.CatalogSnapshotGenerator
+2025-03-24T14:03:20.995+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGenerator
+2025-03-24T14:03:20.996+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorH2
+2025-03-24T14:03:20.997+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorInformix
+2025-03-24T14:03:20.997+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ColumnSnapshotGeneratorOracle
+2025-03-24T14:03:20.998+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.DataSnapshotGenerator
+2025-03-24T14:03:21.002+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ForeignKeySnapshotGenerator
+2025-03-24T14:03:21.004+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.IndexSnapshotGenerator
+2025-03-24T14:03:21.005+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.PrimaryKeySnapshotGenerator
+2025-03-24T14:03:21.005+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGenerator
+2025-03-24T14:03:21.006+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGenerator
+2025-03-24T14:03:21.007+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.TableSnapshotGenerator
+2025-03-24T14:03:21.008+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGenerator
+2025-03-24T14:03:21.009+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.ViewSnapshotGenerator
+2025-03-24T14:03:21.009+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SchemaSnapshotGeneratorSnowflake
+2025-03-24T14:03:21.009+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.SequenceSnapshotGeneratorSnowflake
+2025-03-24T14:03:21.010+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.snapshot.SnapshotGenerator instance liquibase.snapshot.jvm.UniqueConstraintSnapshotGeneratorSnowflake
+2025-03-24T14:03:21.011+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.liquibaseCatalogName aka liquibase.catalogName found
+2025-03-24T14:03:21.015+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Computed checksum for 1742799801012 as ec59d8abf4c999c091d33fd089cfa5de
+2025-03-24T14:03:21.020+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.preserveSchemaCase found
+2025-03-24T14:03:21.020+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.preserveSchemaCase is using the default value of false
+2025-03-24T14:03:21.034+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.database.LiquibaseTableNames instance liquibase.database.StandardLiquibaseTableNames
+2025-03-24T14:03:21.052+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.CatalogComparator
+2025-03-24T14:03:21.053+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ColumnComparator
+2025-03-24T14:03:21.054+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.DefaultDatabaseObjectComparator
+2025-03-24T14:03:21.055+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.ForeignKeyComparator
+2025-03-24T14:03:21.056+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.IndexComparator
+2025-03-24T14:03:21.056+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.PrimaryKeyComparator
+2025-03-24T14:03:21.057+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.SchemaComparator
+2025-03-24T14:03:21.057+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.TableComparator
+2025-03-24T14:03:21.058+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.diff.compare.DatabaseObjectComparator instance liquibase.diff.compare.core.UniqueConstraintComparator
+2025-03-24T14:03:21.060+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.includeCatalogInSpecification found
+2025-03-24T14:03:21.060+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.includeCatalogInSpecification is using the default value of false
+2025-03-24T14:03:21.062+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.sql.alwaysSetFetchSize found
+2025-03-24T14:03:21.062+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.sql.alwaysSetFetchSize is using the default value of true
+2025-03-24T14:03:21.066+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.executor                       : Changelog query completed.
+2025-03-24T14:03:21.078+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-24T14:03:21.082+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.executor                       : Changelog query completed.
+2025-03-24T14:03:21.086+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.lockservice.LockService instance liquibase.lockservice.LockServiceImpl
+2025-03-24T14:03:21.087+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.lockservice.LockService instance liquibase.lockservice.MockLockService
+2025-03-24T14:03:21.087+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.lockservice.LockService instance liquibase.lockservice.OfflineLockService
+2025-03-24T14:03:21.087+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.lockservice.LockService instance liquibase.lockservice.StandardLockService
+2025-03-24T14:03:21.092+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.executor                       : Changelog query completed.
+2025-03-24T14:03:21.095+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : No configuration value for liquibase.allowDuplicatedChangesetIdentifiers found
+2025-03-24T14:03:21.095+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.configuration                  : Configuration liquibase.allowDuplicatedChangesetIdentifiers is using the default value of false
+2025-03-24T14:03:21.097+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.changelog.visitor.ValidatingVisitorGenerator instance liquibase.changelog.visitor.StandardValidatingVisitorGenerator
+2025-03-24T14:03:21.112+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Computed checksum for createTable:[
+    columns=[
+        [
+            [
+                nullable=&quot;false&quot;
+                primaryKey=&quot;true&quot;
+                primaryKeyName=&quot;user_pkey&quot;
+            ]
+            autoIncrement=&quot;true&quot;
+            name=&quot;id&quot;
+            type=&quot;BIGSERIAL&quot;
+        ],
+        [
+            [
+                nullable=&quot;false&quot;
+            ]
+            name=&quot;name&quot;
+            type=&quot;character varying(255)&quot;
+        ]
+    ]
+    tableName=&quot;pet&quot;
+] as 60928a7314806a6969202324c7156ed9
+2025-03-24T14:03:21.112+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Computed checksum for 9:60928a7314806a6969202324c7156ed9: as 1336eb47d6db3ab02bebf1ccfe8221b8
+2025-03-24T14:03:21.112+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Executing internal command changeExecListener
+2025-03-24T14:03:21.113+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Executing internal command update migrate
+2025-03-24T14:03:21.127+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.changelog                      : Fast check found no un-run changesets
+2025-03-24T14:03:21.127+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-03-24T14:03:21.128+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2025-03-24T14:03:21.130+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.executor                       : Changelog query completed.
+2025-03-24T14:03:21.136+07:00 DEBUG 17536 --- [petstore-test] [    Test worker] liquibase.servicelocator                 : Loaded liquibase.report.ShowSummaryGenerator instance liquibase.report.StandardShowSummaryGenerator
+2025-03-24T14:03:21.139+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : UPDATE SUMMARY
+2025-03-24T14:03:21.140+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Run:                          0
+2025-03-24T14:03:21.140+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Previously run:               1
+2025-03-24T14:03:21.140+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Filtered out:                 0
+2025-03-24T14:03:21.140+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : -------------------------------
+2025-03-24T14:03:21.140+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Total change sets:            1
+2025-03-24T14:03:21.140+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.util                           : Update summary generated
+2025-03-24T14:03:21.142+07:00  INFO 17536 --- [petstore-test] [    Test worker] liquibase.command                        : Command execution complete
+2025-03-24T14:03:21.262+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-24T14:03:21.383+07:00  INFO 17536 --- [petstore-test] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-24T14:03:21.446+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-24T14:03:21.882+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-24T14:03:21.998+07:00  INFO 17536 --- [petstore-test] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-24T14:03:22.983+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-24T14:03:22.987+07:00  INFO 17536 --- [petstore-test] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-24T14:03:23.283+07:00  WARN 17536 --- [petstore-test] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24T14:03:24.004+07:00  INFO 17536 --- [petstore-test] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 51395 (http) with context path '/'
+2025-03-24T14:03:24.012+07:00  INFO 17536 --- [petstore-test] [    Test worker] c.e.petstore.PetstoreApplicationTests    : Started PetstoreApplicationTests in 6.518 seconds (process running for 8.1)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\pprik\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.12.1</a> at 24 мар. 2025 г., 14:03:25</p>
+</div>
+</div>
+</body>
+</html>
