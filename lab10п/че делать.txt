@@ -1,0 +1,174 @@
+Шаг 1: Настройка Keycloak
+
+Запусти Keycloak: Самый простой способ - через Docker. Если Docker не установлен, скачай и запусти его как отдельный сервер.
+
+# Запускаем Keycloak в Docker, открываем порт 8180 (чтобы не конфликтовал с твоим 8080)
+# Задаем логин/пароль для админа Keycloak
+docker run -p 8180:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:latest start-dev
+Use code with caution.
+Bash
+Подожди, пока Keycloak запустится.
+
+Войди в Admin Console: Открой браузер и перейди по адресу http://localhost:8180. Войди, используя admin/admin.
+
+Создай Realm:
+
+Наведи мышь на master (в левом верхнем углу) и нажми Create Realm.
+
+Назови его, например, lab_realm. Нажми Create. Ты автоматически переключишься на новый realm.
+
+Создай Клиента (для твоего Spring Boot приложения):
+
+В левом меню выбери Clients.
+
+Нажми Create client.
+
+Client ID: lab_resource_server (это имя будет использоваться в конфигах).
+
+Нажми Next.
+
+Client authentication: Оставь Off (твое приложение будет только проверять токены, а не аутентифицироваться само).
+
+Остальные настройки пока можно оставить по умолчанию. Прокрути вниз и нажми Save.
+
+Создай Роли:
+
+В левом меню выбери Realm Roles.
+
+Нажми Create role.
+
+Role name: ROLE_USER (Важно: если будешь использовать стандартный маппинг Spring Security, лучше добавить префикс ROLE_). Нажми Save.
+
+Нажми Create role еще раз.
+
+Role name: ROLE_ADMIN. Нажми Save.
+
+Создай Пользователей:
+
+В левом меню выбери Users.
+
+Нажми Create user.
+
+Username: kcuser. Нажми Create.
+
+Перейди на вкладку Credentials.
+
+Нажми Set password.
+
+Введи пароль (например, password123), подтверди его. Сними галочку Temporary (чтобы пароль был постоянным). Нажми Save. Подтверди сохранение.
+
+Перейди на вкладку Role mapping.
+
+Нажми Assign role.
+
+Найди и выбери ROLE_USER. Нажми Assign.
+
+Создай второго пользователя: kcadmin, задай ему пароль (например, password456), перейди в Role mapping и назначь ему роль ROLE_ADMIN.
+
+(Важно!) Убедись, что роли добавляются в токен:
+
+В левом меню: Client Scopes.
+
+Найди и кликни на scope с именем roles.
+
+Перейди на вкладку Mappers.
+
+Убедись, что есть маппер типа Realm Roles (или User Realm Roles). Если нет, нажми Configure a new mapper -> User Realm Roles.
+
+Назови его realm roles mapper.
+
+Token Claim Name: realm_access.roles (это стандартное место для realm ролей).
+
+Claim JSON Type: String.
+
+Убедись, что Add to access token включено.
+
+Нажми Save.
+
+
+
+Шаг 3: Тестирование с Postman
+
+Теперь процесс получения токена и его использования изменится:
+
+Получение Токена из Keycloak:
+
+Цель: Получить Access Token от Keycloak для пользователя kcuser или kcadmin.
+
+Действие в Postman:
+
+Создай новый запрос.
+
+Метод: POST
+
+URL: http://localhost:8180/realms/lab_realm/protocol/openid-connect/token (Стандартный OIDC токен-эндпоинт Keycloak)
+
+Вкладка Headers: Добавь Content-Type со значением application/x-www-form-urlencoded.
+
+Вкладка Body:
+
+Выбери x-www-form-urlencoded.
+
+Добавь следующие пары ключ-значение:
+
+client_id: lab_resource_server (Client ID, который ты создал в Keycloak)
+
+username: kcuser (или kcadmin)
+
+password: password123 (или password456)
+
+grant_type: password (Способ получения токена - по логину/паролю)
+
+(Иногда требуется scope: openid, но для password grant обычно не обязательно)
+
+Нажми "Send".
+
+Ожидаемый результат: Статус 200 OK. В теле ответа будет JSON с несколькими токенами. Тебе нужен access_token.
+
+Действие: Скопируй значение access_token.
+
+Использование Токена для Доступа к API:
+
+Цель: Отправить запрос к твоему Spring Boot приложению (/api/orders/search или /api/admin/monitor), используя токен от Keycloak.
+
+Действие в Postman:
+
+Создай запрос к своему API (например, GET http://localhost:8080/api/orders/search).
+
+Вкладка Headers: Добавь заголовок Authorization со значением Bearer <СКОПИРОВАННЫЙ_ACCESS_TOKEN_ИЗ_KEYCLOAK>.
+
+Нажми "Send".
+
+Объяснение: "Мы отправляем запрос к нашему Spring Boot приложению. В заголовке Authorization передаем Access Token, полученный от Keycloak. Spring Security (настроенный как OAuth2 Resource Server) перехватит этот токен, проверит его подпись с помощью публичного ключа Keycloak (полученного по issuer-uri), проверит срок действия, извлечет роли с помощью нашего JwtAuthenticationConverter и затем проверит, разрешен ли доступ к /api/orders/search для этих ролей."
+
+Ожидаемый результат:
+
+Если использовал токен kcuser для /api/orders/search -> 200 OK.
+
+Если использовал токен kcuser для /api/admin/monitor -> 403 Forbidden.
+
+Если использовал токен kcadmin для /api/admin/monitor -> 200 OK.
+
+Если использовал токен kcadmin для /api/orders/search -> 200 OK.
+
+Возможные Проблемы и Отладка:
+
+Keycloak не запускается: Проверь логи Docker (docker logs <container_id>).
+
+Не удается получить токен от Keycloak: Проверь URL токен-эндпоинта, client_id, username, password, grant_type. Проверь логи Keycloak.
+
+Spring Boot приложение не запускается: Проверь зависимости, конфигурацию в application.properties (issuer-uri), синтаксис в SecurityConfig.
+
+401 Unauthorized от Spring Boot:
+
+Токен не передается или передан неправильно в заголовке Authorization: Bearer ....
+
+issuer-uri в application.properties указан неверно (опечатка, неправильный realm). Spring не может найти публичные ключи для проверки подписи.
+
+Токен истек (получи новый).
+
+Keycloak остановлен.
+
+403 Forbidden от Spring Boot:
+
+Токен валиден, но роли извлечены неправильно или не соответствуют требованиям @PreAuthorize / .authorizeHttpRequests. Проверь JwtAuthenticationConverter, правильность имен ролей в Keycloak (с префиксом ROLE_ или без) и соответствие их в SecurityConfig и аннотациях. Посмотри (декодируй) сам JWT (например, на jwt.io), чтобы увидеть, какие роли он содержит в realm_access.roles.
